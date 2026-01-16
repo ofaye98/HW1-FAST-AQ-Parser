@@ -2,7 +2,7 @@
 Building a FAST[AQ] Parser + Building a DNA -> RNA Transcriber
 
 Use of AI in assignment:
-ChatGPT was used for debugging the github automate testing portion. Ran into many errors, so went with the fixes suggested by ChatGPT for the .github/workflows/tests.yml file. I made sure to understand the code it had suggested.
+ChatGPT was used for debugging the github automate testing portion. Ran into many errors, so went with the fixes suggested by ChatGPT for the .github/workflows/tests.yml and pyproject.toml files. I made sure to understand the code it had suggested.
 
 # Assignment Overview
 The purpose of this assignment is to bring everybody up to speed on using python and highlight some of the elements of the language and of OOP that will be _inherited_ by downstream course content. We also hope to use this as an opportunity to learn some of the useful tools within github for software development that will be useful to you in your research experiences down the road. 
