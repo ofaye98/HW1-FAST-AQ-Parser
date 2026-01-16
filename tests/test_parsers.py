@@ -73,6 +73,7 @@ def test_FastaFormat():
     testfasta_file_path = data_dir/"test.fa"
     testfastq_file_path = data_dir/"test.fq"
 
+    # pass if files exist
     assert testfasta_file_path.exists(), f"Expected {testfasta_file_path} to exist."
     assert testfastq_file_path.exists(), f"Expected {testfastq_file_path} to exist."
 
@@ -91,8 +92,18 @@ def test_FastqParser():
     an instance of your FastqParser class and assert that it properly reads 
     in the example Fastq File.
     """
+    project_root = Path(__file__).resolve().parents[1]  
+    data_dir = project_root/"data"
 
-    pass
+    testfastq_file_path = data_dir/"test.fq"
+    assert testfastq_file_path.exists(), f"Expected {testfastq_file_path} to exist." # pass if file exists
+    testfastq_records = list(FastqParser(str(testfastq_file_path))) 
+
+    # checking FASTQ invariants
+    assert len(testfastq_records) > 0 # at least one fastq was loaded
+    assert testfastq_records[0][0] is not None # header exists
+    assert testfastq_records[0][1] is not None # sequence exists
+    assert testfastq_records[0][1] != "" # sequence not empty
 
 def test_FastqFormat():
     """
