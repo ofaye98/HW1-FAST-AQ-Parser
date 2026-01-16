@@ -18,8 +18,7 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
-    "pytest",
-	"pathlib",
+    "pytest"
 ]
 
 [project.urls]
