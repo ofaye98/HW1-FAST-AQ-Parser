@@ -58,7 +58,6 @@ def test_FastaParser():
     blank_fasta_file_path =  tests_dir/"blank.fa"
     assert blank_fasta_file_path.exists(), f"Expected {blank_fasta_file_path} to exist." 
     # pass if a ValueError is raised when loading a blank fasta file
-    blankfasta_records = list(FastaParser(str(blank_fasta_file_path)))
     with pytest.raises(ValueError, match=r"had 0 lines"): # must match this regex pattern, checks for correct failure reason
         list(FastaParser(str(blank_fasta_file_path)))
 
