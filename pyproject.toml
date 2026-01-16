@@ -12,14 +12,15 @@ pythonpath = [
 
 [project]
 name = "seqparser"
-authors = [{name = "Han Chen", email = "han.chen@ucsf.edu"}]
+authors = [{name = "Faye Orcales", email = "faye.orcales@ucsf.edu"}]
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
     "pytest"
+	"pathlib"
 ]
 
 [project.urls]
-Home = "https://github.com/BMI203-2024/HW1-FAST-AQ-Parser.git"
+Home = "https://github.com/ofaye98/HW1-FAST-AQ-Parser/tree/test/fast-aq-parser"
